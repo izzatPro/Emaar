@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EAIA;EACA;;AAJA;EACI","file":"style.css","sourcesContent":["body {\n    color: red;\n    background: pink;\n    &:hover{\n        color: black;\n    }\n    width: 40px;\n    height: 200px;\n}"]}
