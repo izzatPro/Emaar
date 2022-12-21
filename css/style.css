@@ -3,10 +3,38 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Alet';
+  src: url('../fonts/Alethiaproregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+@font-face {
+  font-family: 'Lato L';
+  src: url('../fonts/Lato-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  }
+@font-face {
+  font-family: 'Lato M';
+  src: url('../fonts/Lato-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  }
+@font-face {
+  font-family: 'Lato R';
+  src: url('../fonts/ALato-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  }
+
 body{
+  font-family: 'Alet', sans-serif !important;
+  font-weight: 400;
   background: white;
   height: 123213px;
   position: relative;
+  font-family: '';
 }
 a {
   text-decoration: none;
@@ -14,6 +42,8 @@ a {
 a:hover{
   color:unset;
 }
+
+  
 .line{
   background: #777777;
   opacity: 0.2;
@@ -247,6 +277,7 @@ a:hover{
   font-size: 16px;
   color: #071C35;
   cursor: pointer;
+  text-align: center;
 
 }
 .metka_second{
@@ -285,10 +316,10 @@ a:hover{
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 23px;
+  top:22px;
 }
 .metka__block_text{
   background: white;
-  padding: 12px 49px 30px 47px;
+  padding: 12px 45px 30px 44px;
   font-weight: 500;
 }
