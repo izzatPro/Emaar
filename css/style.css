@@ -5,13 +5,37 @@
 }
 body{
   background: white;
+  height: 123213px;
+  position: relative;
 }
 a {
   text-decoration: none;
 }
+a:hover{
+  color:unset;
+}
+.line{
+  background: #777777;
+  opacity: 0.2;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.line_left{
+  left: 384px;
+}
+.line_center{
+  left: 783px;
+}
+.line_right{
+  right:367px;
+}
 .header{
   padding: 309px 0px 70px 70px;
   background:url('../images/firstScreen/JPEG/bg_main\ 1.jpg') center center / cover no-repeat;
+  position: relative;
+  z-index: 4;
 }
 .header__card{
   width: 382px;
@@ -74,4 +98,197 @@ a {
 }
 .sale{
   padding: 153px 156px 185px 76px;
+}
+.sale__wraper{
+  display: flex;
+  justify-content: space-between;
+}
+.sale__left{
+  margin-right: 61px;
+  position: relative;
+  z-index: 4;
+}
+.sale__left img{
+  object-fit: contain;
+  height: 500px;
+}
+.sale__right{
+  padding: 51px 0;
+}
+.sale__right_title{
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #071C35;
+  /* max-width: 551px; */
+  margin-bottom: 30px;
+}
+.sale__right_subtitle{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+  margin-bottom: 50px;
+}
+.sale__right_wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.sale__right_procent{
+  font-weight: 400;
+  font-size: 44px;
+  color: #071C35; 
+}
+.sale__right_desc{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #777777;
+  text-align: left;
+}
+.sale__button_itself{
+  width: 200px;
+  height: 40px;
+  padding: 10px 60px;
+  background: #071C35;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 4;
+}
+.top{
+  padding-bottom: 109px;
+}
+.top__title{
+  font-weight: 400;
+  font-size: 54px;
+  color: #071C35;
+  margin-bottom: 52px;
+}
+.top__wrapper_block{
+  padding: 15px;
+  border: 1px solid rgba(7, 28, 53, 0.1);
+  width: 420px;
+  height: 520px;
+}
+.top__wrapper_img{
+  background: url('../images/firstScreen/JPEG/top1.jpg') center center / cover no-repeat;
+  height: 100%;
+  position: relative;
+  z-index: 4;
+}
+.top_second{
+  background: url('../images/firstScreen/JPEG/top2.jpg') center center / cover no-repeat;
+}
+.top_third{
+  background: url('../images/firstScreen/JPEG/top3.jpg') center center / cover no-repeat;
+}
+.top__wrapper_footer{
+  position: absolute;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(7.5px);
+  top: 420px;
+  transform: translateY(-32%);
+  width: 100%;
+  padding: 22px 15px;
+}
+.top__wrapper_title{
+  font-weight: 400;
+  font-size: 25px;
+}
+.top__wrapper_subtitle{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.top__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.map{
+  padding-left: 150px;
+  position: relative;
+  z-index: 4;
+}
+.map .container{
+  background: url('../images/firstScreen/JPEG/map_bg.jpg') center center / cover no-repeat;
+  position: relative;
+  height: 810px;
+}
+.map__title{
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #071C35;
+  max-width: 457px;
+  position: absolute;
+  margin-top: 268px;
+}
+.metka{
+  position: absolute;
+  width: 116px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  bottom: 100px;
+  left: 394px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #071C35;
+  cursor: pointer;
+
+}
+.metka_second{
+  bottom: 422px;
+  left: 541px;
+  line-height: 18px;
+}
+.metka_third{
+  bottom: 555px;
+  left: 668px;
+  line-height: 17px;
+}
+.metka__text{
+  margin-bottom: 5px;
+}
+.metka__block{
+  border: 5px solid #071C35;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.metka__block_circle{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #071C35;
+}
+.metka__block_third{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 23px;
+}
+.metka__block_text{
+  background: white;
+  padding: 12px 49px 30px 47px;
+  font-weight: 500;
 }
