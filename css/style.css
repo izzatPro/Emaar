@@ -311,10 +311,11 @@ a:hover{
   font-family: 'Lato M';
 }
 .flats__content{
-  padding: 30px 65px 0px 30px;
+  padding: 30px 65px 30px 30px;
   max-width: 310px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.03);
+  max-height: 380px;
 }
 .flats__content_title{
   margin-bottom: 15px;
@@ -341,6 +342,7 @@ a:hover{
 .flats__offer_wrapper{
   padding:25px  25px 50px 25px;
   border: 1px solid #D9D9D9;
+  margin-bottom: 90px;
 }
 .flats__offer_content{
   width: 920px;
@@ -351,6 +353,14 @@ a:hover{
 }
 .flats__offer_img1{
   background: url(../images/firstScreen/JPEG/com_header_1.jpg) center center / cover no-repeat;
+  height: 100%;
+}
+.flats__offer_img2{
+  background: url(../images/firstScreen/JPEG/com_hed_2.jpg) center center / cover no-repeat;
+  height: 100%;
+}
+.flats__offer_img3{
+  background: url(../images/firstScreen/JPEG/com_header_3.jpg) center center / cover no-repeat;
   height: 100%;
 }
 .flats__offer_footer{
@@ -395,12 +405,67 @@ a:hover{
   color: #777;
 }
 .offer__slider-wrapper{
+  position: relative;
   width: 710px;
   margin: 0 auto;
 }
+.offer__slider-arrows{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.fa-long-arrow-left{
+  position: absolute;
+  right: 17px;
+}
+.fa-long-arrow-right{
+  position: absolute;
+  right: -820px;
+  transform: rotate(180deg);
+}
+
 .offer__slider-descr{
   padding: 30px;
+  padding-right: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.05);
 }
 .offer__slider-wrapper{
   display: flex;
+}
+.offer__slider-title{
+  font-family: 'Alet';
+  font-size: 30px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.offer__slider-subtitle{
+  margin-bottom: 15px;
+}
+.offer__slider-desc{
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+  font-family: 'Lato L';
+}
+.offer__slider-cost{
+  font-family: 'Lato R';
+  margin-bottom: 13px;
+}
+.offer_button button{
+  width: 265px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 11px 83px;
+  font-family: 'Lato R';
+  font-size: 14px;
+  background: #071C35;
+  outline: none !important;
+  border:none;
 }
