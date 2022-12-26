@@ -28,7 +28,12 @@ ul {
 .show{
     display: block;
   }
-
+.present{
+    display: inline-block;
+  }
+.cover{
+  display: none;
+}
 .container{
   padding: 0;
 }
