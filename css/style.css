@@ -37,6 +37,128 @@ ul {
 .container{
   padding: 0;
 }
+.modal{
+  position: fixed;
+  width: 100%;
+  height: 100vh !important;
+  top: 0;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../images/firstScreen/JPEG/bgPop.jpg') center  center / cover no-repeat ;
+}
+.modal__wrapper{
+  position:fixed ;
+  width: 100%;
+  height: 100% !important;
+  top: 0;
+  height: 0;
+  background: rgba(228, 228, 228, 0.85);
+  border: 1px solid #000000;
+  backdrop-filter: blur(15px);
+
+}
+.modal__wrapper-block{
+  margin: 70px auto;
+  width: 1080px;
+  height: 670px;
+  background: white;
+  padding: 100px 0;
+}
+.modal__wrapper-wrapper{
+  width: 100%;
+  height: 100%;
+  background: url('../images/firstScreen/JPEG/bgPopContent.jpg');
+  /* background-position: 300px 0px; */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.modal__wrapper-content{
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 28, 53, 0.75);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(7.5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal__wrapper-contact{
+  width: 50%;
+  padding: 200px 170px 200px 150px;
+  background: rgba(7, 28, 53, 0.02);
+  backdrop-filter: blur(7.5px);
+}
+.modal__wrapper-brochure{
+  width: 50%;
+  padding: 65px 115px 65px 75px;
+}
+.contact-wrapper{
+  width: 220px;
+}
+.brochure-wrapper{
+  width: 350px;
+}
+.modal__wrapper-h4{
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato R';
+  color: white;
+  margin-bottom: 30px;
+}
+.modal__wrapper-social{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Lato R';
+  color:white;
+}
+.modal__wrapper-social a{
+  margin-right: 10px;
+}
+.modal__wrapper-tg, .modal__wrapper-wa{
+  color:#C3C3C3;
+}
+.modal__wrapper-h3{
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+
+}
+
+.input__brochure{
+  font-size: 16px;
+  padding: 9px 15px 12px 9px;
+  text-align: left;
+  color: #FFFFFF;
+  background: none;
+  width: 100%;
+  outline: none;
+  border:none;
+  border-bottom:1px solid white;
+  font-family: 'Lato L';
+  margin-bottom: 30px;
+}
+.input__brochure::placeholder{
+ color: white;
+}
+.input__brochure-submit{
+  width: 100%;
+  padding: 12px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #071C35;
+  font-family: 'Lato R';
+  font-size: 14px;
+
+}
 .line{
   background: #777777;
   opacity: 0.2;

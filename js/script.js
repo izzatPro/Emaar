@@ -240,5 +240,6 @@ document.addEventListener('DOMContentLoaded', () =>{
             totalShow.classList.add('cover');
            });
 
+    //
 
 });
