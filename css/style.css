@@ -37,6 +37,7 @@ ul {
 .container{
   padding: 0;
 }
+/* First modal */
 .modal{
   position: fixed;
   width: 100%;
@@ -47,6 +48,7 @@ ul {
   justify-content: center;
   align-items: center;
   background: url('../images/firstScreen/JPEG/bgPop.jpg') center  center / cover no-repeat ;
+  display: none;
 }
 .modal__wrapper{
   position:fixed ;
@@ -63,7 +65,6 @@ ul {
   margin: 70px auto;
   width: 1080px;
   height: 670px;
-  background: white;
   padding: 100px 0;
 }
 .modal__wrapper-wrapper{
@@ -86,13 +87,20 @@ ul {
 }
 .modal__wrapper-contact{
   width: 50%;
-  padding: 200px 170px 200px 150px;
+  padding: 196px 170px 200px 150px;
   background: rgba(7, 28, 53, 0.02);
   backdrop-filter: blur(7.5px);
+  position: relative;
+}
+.modal__emaar{
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
 .modal__wrapper-brochure{
   width: 50%;
   padding: 65px 115px 65px 75px;
+  position: relative;
 }
 .contact-wrapper{
   width: 220px;
@@ -119,9 +127,7 @@ ul {
 }
 .modal__wrapper-social a{
   margin-right: 10px;
-}
-.modal__wrapper-tg, .modal__wrapper-wa{
-  color:#C3C3C3;
+  color: #C3C3C3;
 }
 .modal__wrapper-h3{
   font-size: 30px;
@@ -131,6 +137,34 @@ ul {
   color: #FFFFFF;
   margin-bottom: 18px;
 
+}
+.close-btn{
+  width: 50px;
+  height: 120px;
+  background: white;
+  color: #000000;
+  padding: 32px 11px;
+  position: absolute;
+  right: 0;
+  top:184px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  transform: rotate(-180deg);
+  border:none;
+
+
+}
+.close-btn span{
+  writing-mode: vertical-rl;
+  text-align: center;
+  vertical-align:bottom;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.close-btn span:first-child{
+  margin-bottom: 4px;
 }
 
 .input__brochure{
@@ -145,6 +179,7 @@ ul {
   border-bottom:1px solid white;
   font-family: 'Lato L';
   margin-bottom: 30px;
+
 }
 .input__brochure::placeholder{
  color: white;
@@ -157,7 +192,73 @@ ul {
   color: #071C35;
   font-family: 'Lato R';
   font-size: 14px;
+}
+/* Modal second */
+.modal__offer{
+ /* display: none; */
+ display: block;
+}
+.modal__wrapper-contact2{
+   padding: 200px 80px 80px 80px;
+   background: none;
+   backdrop-filter: none;
+}
+.popup30{
+  margin-bottom: 58px;
+}
+.contact-wrapper2{
+  width: 100%;
+}
+.modal__wrapper-social2{
+  justify-content: center;
+}
+.modal__wrapper-tg2{
+  margin-right: 30px;
+}
+.close-btn2{
+   top: 216px;
 
+}
+.brochure-wrapper2{
+  height: 570px;
+  width: 450px;
+  padding: 83px 50px ;
+  background: white;
+}
+.modal__wrapper-brochure2{
+  padding: 0;
+}
+.brochure-wrapper2 .modal__wrapper-h3{
+  color: #071C35;
+}
+.brochure-wrapper2 input::placeholder{
+  color: #071C35;
+}
+.brochure-wrapper2 input:not(:last-child){
+  border-bottom: 1px solid rgba(7, 28, 53, 0.1);
+  color: #071C35;
+}
+.input__brochure-submit2{
+  margin-bottom: 48px;
+}
+.brochure__link-wrapper a {
+  text-transform: uppercase;
+  color: #071C35;
+  font-size: 14px;
+}
+.brochure__link-wrapper ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input__brochure-submit2{
+  background: #071C35;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border:none;
 }
 .line{
   background: #777777;
