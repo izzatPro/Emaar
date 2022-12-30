@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Document</title>
 </head>
 <body>
@@ -469,10 +470,10 @@
                         </div>
                     </div>
                     <div class="speak__call">
-                        <form action="" class="call d-flex justify-content-between">
-                            <input type="text" placeholder="Your Name" name="name" autocomplete="off">
-                            <input type="email" placeholder="Your Email" name="mail" autocomplete="off">
-                            <input type="tel" placeholder="Phone number" name="phone" autocomplete="off">
+                        <form action="POST" class="call d-flex justify-content-between" data-netlify="true">
+                            <input type="text" placeholder="Your Name" name="name" autocomplete="off" required>
+                            <input type="email" placeholder="Your Email" name="email" autocomplete="off" required>
+                            <input type="text" placeholder="Phone number" name="phone" autocomplete="off" required>
                             <input type="submit" value="Request a call">
                         </form>
                     </div>
@@ -488,15 +489,13 @@
                 <div class="footer__menu">
                     <div class="footer__menu-link">
                         <ul>
-                            <a href="#" class="">
-                                <li>top projects</li>
-                            </a>
-                            <a href="#">
-                                <li>community</li>
-                            </a>
-                            <a href="#">
-                                <li>payment option</li>
-                            </a>
+                                <li><a href="#">TOP PROJECTS</a></li>     
+                            <li >
+                                <a href="#">community</a>
+                            </li>
+                            <li>
+                                <a href="#">payment option</a>
+                            </li>
                         </ul>        
                     </div>
                     <div class="footer__menu-social d-flex justify-content-between align-items-center">
@@ -508,12 +507,12 @@
                         <span class="hov cover total__hide">hide</span>
                             </div>
                         <div class="footer__menu-tg">
-                            <a href=""><div class="tg-text">telegram</div>
+                            <a href="#"><div class="tg-text">telegram</div>
                             <i class="fab fa-telegram-plane"></i>
                             </a>
                         </div>
                         <div class="footer__menu-wa">
-                            <a href=""><div class="wa-text">whatsapp</div>
+                            <a href="#"><div class="wa-text">whatsapp</div>
                                 <i class="fab fa-whatsapp"></i>
                             </a>
                         </div>
