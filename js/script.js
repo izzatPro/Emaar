@@ -116,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () =>{
     });
 
 
-    console.log("Asdsad");
 
     // Slider 2
     const slides2 = document.querySelectorAll('.second__slide'),
@@ -240,6 +239,94 @@ document.addEventListener('DOMContentLoaded', () =>{
             totalShow.classList.add('cover');
            });
 
-    //
+    //modal
+    const  modalTrigger = document.querySelectorAll("[data-modal]"),
+           modal = document.querySelector('.modal__brochure'),
+           modalCloseBtn = document.querySelector('[data-close]');
+           
+           
+    
 
+     //Функция для открытия модальных окон
+        modalTrigger.forEach(btn =>{
+          btn.addEventListener('click', (e) =>{
+            e.preventDefault();
+            modal.style.opacity = 1;
+            modal.style.zIndex = 123213;
+            document.body.style.overflow = "hidden"; // колесо прокрутки
+           });
+        });
+
+     //Функция для закрытия модального окна
+     function closeModal(){
+            modal.style.opacity = 0;
+            modal.style.zIndex = -5;
+		    document.body.style.overflow = "visible";
+      }
+		modalCloseBtn.addEventListener('click', () =>{
+		    closeModal();
+						});
+	
+    // Кликаем на подложку, модальное окно закрывается.		
+			modal.addEventListener('click', (e) =>{
+                    if ( e.target.classList.contains('modal__wrapper')){
+                        closeModal();    
+                            }
+                        });
+    // Кликаем на escp
+            document.addEventListener('keydown', (e) =>{
+                if(e.code == "Escape"){
+                closeModal();   
+                } 
+                            });
+               
+        
+
+
+    // Modal second
+        const  modal2 = document.querySelector('.modal__offer'),
+               modalCloseBtn2 = document.querySelector('[data-close="second"]');
+                            
+  
+    function openModal2(){
+        modal2.style.opacity = 1;
+        modal2.style.zIndex = 123213;
+        document.body.style.overflow = "hidden"; 
+        clearInterval(modalTimerId);
+    }
+
+
+    function closeModal2(){
+        modal2.style.opacity = 0;
+        modal2.style.zIndex = -5;
+        document.body.style.overflow = "visible";
+    };
+    modalCloseBtn2.addEventListener("click", closeModal2); 
+
+    modal2.addEventListener("click" ,(e) =>{
+      if (e.target.classList.contains('modal__wrapper')){
+            closeModal2();
+          }
+         });
+
+
+        document.addEventListener('keydown', (e)=>{
+         if(e.code == "Escape"){
+          closeModal2();
+         }
+        });
+        
+        const modalTimerId = setTimeout(openModal2,15000);
+
+        function showModalByScroll(){
+          //Долистал до конца
+          if ( window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight){
+            openModal2();
+            window.removeEventListener('scroll' , showModalByScroll);
+          }
+        }
+
+
+
+        window.addEventListener('scroll', showModalByScroll);
 });

@@ -79,9 +79,9 @@
                             </div>
                         </div>
                         <a href="" class="sale__button">
-                            <div class="sale__button_itself">
+                            <button class="sale__button_itself" data-modal>
                                 see more
-                            </div>
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -275,7 +275,7 @@
                                                     FROM AED 2 288 888
                                                 </div>
                                                 <div class="offer_button">
-                                                   <button>
+                                                   <button data-modal>
                                                     get details
                                                    </button>
                                                 </div>
@@ -337,7 +337,7 @@
                                                     FROM AED 1 247 888
                                                 </div>
                                                 <div class="offer_button">
-                                                   <button>
+                                                   <button data-modal>
                                                     get details
                                                    </button>
                                                 </div>
@@ -402,7 +402,7 @@
                                                     FROM AED 1 138 888
                                                 </div>
                                                 <div class="offer_button">
-                                                   <button>
+                                                   <button data-modal>
                                                     get details
                                                    </button>
                                                 </div>
@@ -526,7 +526,7 @@
         </footer>
 
         <!-- Modal -->
-        <div class="modal">
+        <div class="modal modal__brochure">
             <div class="modal__wrapper">    
                 <div class="modal__wrapper-block">
                     <div class="modal__wrapper-wrapper">
@@ -557,11 +557,17 @@
                                         <input type="text" name="name" placeholder="Your name" class="input__brochure" autocomplete="off">
                                         <input type="email" name="email" placeholder="Your e-mail" class="input__brochure" autocomplete="off">
                                         <input type="text" name="number" placeholder="Your phone" class="input__brochure" autocomplete="off">
-                                        <input type="submit" value="Download brochure" class="input__brochure-submit" autocomplete="off">
+                                        <a href="#" class="download">
+                                            <div class="modal__link-brochure input__brochure-submit">
+                                               Download brochure
+                                            </div>
+                                        </a>
+                                       
+                                     
                                     </form>
                                 </div>
                                 <div class="button_popup">
-                                    <button class="close-btn"> <span>close</span> <span class="x">&#9747</span> </button>
+                                    <button class="close-btn" data-close> <span>close</span> <span class="x">&#9747</span> </button>
                                 </div>
                             </div>
                         </div>
@@ -612,7 +618,7 @@
                                     </div>
                                 </div>
                                 <div class="button_popup">
-                                    <button class="close-btn close-btn2"> <span>close</span> <span class="x">&#9747</span> </button>
+                                    <button class="close-btn close-btn2" data-close="second"> <span>close</span> <span class="x">&#9747</span> </button>
                                 </div>
                             </div>
                         </div>
