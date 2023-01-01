@@ -23,6 +23,22 @@
         font-size: 30px;
     }
  }
+ @media (min-width: 1400px){
+    .col-xxl-4 {
+        width: 32%
+    }
+    }
+ @media (min-width: 1200px){
+    .col-xl-4 {
+    width: 32% !important;
+    }
+ }
+ @media (min-width: 768px){
+ .col-md-6 {
+     width: 48%;
+      }
+ }
+
 @media (max-width: 1199.98px) {
     .header{
         padding-top: 150px;
@@ -66,6 +82,10 @@
     .sale__right_wrapper {
         margin-bottom: 25px;
     }
+    .top .top__wrapper_block:last-child{
+        margin-top: 15px !important ;
+        margin: 0 auto;
+    }
  }
  @media (max-width: 991.98px) { 
     .header{
@@ -103,14 +123,41 @@
     }
      .sale__right_title {
         font-size: 17px;
-        margin-bottom: 10px;
-        
+        margin-bottom: 10px;   
     }
+
  }
  @media (max-width: 767.98px) { 
     .header{
         padding-top: 100px;
     }
+    .top__wrapper_img {
+        width: 400px;
+        height: 488px;
+    }
+    .top__wrapper_block{
+        width: 430px;
+    }
+    .top .top__wrapper_block:last-child {
+        margin: 0;
+        margin-top: 0 !important;
+    }
+    .top__wrapper_block:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 15px;
+        
+    }
+    .row{
+        align-items: center;
+        justify-content: center;
+    }
+    .sale {
+        padding-bottom: 0;
+    }
+    .top__title {
+        margin-bottom: 25px;
+    }
+
 
   }
   @media (max-width: 575.98px) { 
@@ -162,7 +209,32 @@
     .sale__right_wrapper {
         margin-bottom: 15px;
     }
+    .sale__right {
+        padding-bottom: 25px;
+    }
     .sale__button{
         text-align: center;
+    }
+    .top__title {
+    font-size: 25px;
+    margin-bottom: 18px;
+    }
+    .top__wrapper_block {
+        width: 300px;
+    }
+    .top__wrapper_block:not(:last-child) {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .top .top__wrapper_block:last-child {
+        margin-top: 0 !important;
+        margin: 0 ;
+    }
+    .row{
+        align-items: center;
+        justify-content: center;
+    }
+    .top__wrapper_img {
+        width: 100%
     }
    }

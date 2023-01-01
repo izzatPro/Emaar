@@ -433,8 +433,10 @@ ul {
 .top__wrapper_block{
   padding: 15px;
   border: 1px solid rgba(7, 28, 53, 0.1);
-  width: 420px;
   height: 520px;
+}
+.top__wrapper_block:not(:last-child){
+  margin-right: 10px;
 }
 .top__wrapper_img{
   background: url('../images/firstScreen/JPEG/top1.jpg') center center / cover no-repeat;
