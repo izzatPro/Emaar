@@ -1,3 +1,8 @@
+@media (max-width: 1500.98px) { 
+    .map{
+        padding-left:0 ;
+    }
+ }
 @media (max-width: 1450.98px) { 
     .sale__right_title {
         font-size: 40px;
@@ -21,6 +26,18 @@
     }
     .sale__right_procent {
         font-size: 30px;
+    }
+    .metka_second {
+        left: 457px;
+        bottom: 421px;
+    }
+    .metka__first{
+        bottom: 112px;
+        left: 317px;
+    }
+    .metka_third {
+        bottom: 543px;
+        left: 569px;
     }
  }
  @media (min-width: 1400px){
@@ -86,6 +103,17 @@
         margin-top: 15px !important ;
         margin: 0 auto;
     }
+    .metka{
+        display: none;
+    }
+    .map .container{
+        margin-right: 0;
+        margin-left: 0;
+        max-width: 100%;
+    }
+    .map__title{
+        margin-left: 30px;
+    }
  }
  @media (max-width: 991.98px) { 
     .header{
@@ -125,6 +153,9 @@
         font-size: 17px;
         margin-bottom: 10px;   
     }
+    .map__title{
+        margin-top: 0;
+    }
 
  }
  @media (max-width: 767.98px) { 
@@ -157,7 +188,16 @@
     .top__title {
         margin-bottom: 25px;
     }
-
+    .top {
+        padding-bottom: 0px;
+    }
+    .map .container {
+    max-width: 100%;
+    }
+    .map__title {
+        font-size: 30px;
+        margin-top: 40px;
+    }
 
   }
   @media (max-width: 575.98px) { 
@@ -236,5 +276,24 @@
     }
     .top__wrapper_img {
         width: 100%
+    }
+    .map .container{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .map__title{
+        margin-left: 30px;
+    }
+    .top {
+        padding-bottom: 0;
+    }
+    .map__title {
+        margin-left: 30px;
+    }
+    .map__title {
+        font-size: 24px;
+        margin-top: 100px;
+        max-width: 250px;
+
     }
    }
