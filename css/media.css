@@ -74,6 +74,24 @@
     .flats__content_subtitle:not(:last-child) {
         margin-bottom: 13px;
     }
+    .footer__menu-number span {
+        font-size: 16px;
+    }
+    .footer__girl {
+        bottom: -80px;
+        left: -15px;
+    }
+    .footer__girl img {
+        width: 95%;
+        height: 285px;
+    }
+    .footer__logo img{
+        width: 95%;
+    }
+    .footer__menu-link ul {
+        width: 296px;
+        font-size: 12px;
+    }
  }
  @media (min-width: 1400px){
     .col-xxl-4 {
@@ -205,6 +223,34 @@
     .flats__offer_content {
         width: 100%;
     }
+    .payment__block-title {
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+    .payment__block-content {
+        padding: 30px;
+        width: 550px;
+        height: 360px;
+    }
+    .payment__block-line {
+        margin-bottom: 18px;
+    }
+    .payment__block {
+        position: relative;
+        margin-bottom: 150px;
+    }
+    .payment__block-addition {
+        top: 39%;
+    }
+    .footer__girl {
+        left: 86px;
+    }
+    .footer__menu-number span {
+        font-size: 11px;
+    }
+    .payment {
+        padding-bottom: 0px;
+    }
  }
  @media (max-width: 991.98px) { 
     .header{
@@ -283,6 +329,24 @@
     }
     .prev3 img, .next3 img{
         bottom: 383px
+    }
+    .payment__block-img img{
+        width: 100%;
+    }
+    .tg-text, .wa-text {
+        font-size: 15px;
+    }
+    .footer__menu-number span {
+        font-size: 15px;
+    }
+    .footer__menu-number span {
+        font-size: 10px;
+    }
+    .prefooter .container{
+        justify-content: flex-start !important;
+    }
+    .call input {
+        width: 150px;
     }
  }
  @media (max-width: 767.98px) { 
@@ -381,7 +445,47 @@
 .flats__offer {
     width: 100%;
 }
+.flats {
+    padding-bottom: 0px;
+}
+.payment__block-content {
+    padding: 30px;
+    backdrop-filter: blur(-1.5px);
+    width: 545px;
+    height: 350px;
+    position: absolute;
+    top: 16%;
+    right: -13px;
  }
+ .payment__block-2 .payment__block-content{
+   left: 10px;
+ }
+ .footer__girl {
+    display: none;
+}
+.footer__menu {
+    margin-left: 0;
+}
+.footer__menu-number span {
+    font-size: 11px;
+}
+.speak__call form{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+.speak__subtitle-decr {
+    width: 300px;
+    font-size: 16px;
+}
+.call input {
+    width: 100%;
+    margin-right: 0px !important;
+}
+.call input:nth-child(3){
+    margin-bottom: 15px;
+}
+}
   @media (max-width: 575.98px) { 
     .header{
         padding: 5px;
@@ -527,5 +631,77 @@
     }
     .flats__offer {
         width: 274px;
+    }
+    .payment__block-content {
+        padding: 10px;
+        backdrop-filter: blur(-1.5px);
+        width: 300px;
+        height: 320px;
+        position: absolute;
+        top: 16%;
+        right: 16px;
+    }
+    .payment__block-title {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .payment__block-line {
+        margin-bottom: 11px;
+    }
+    .payment__block-subtitle {
+        font-size: 14px;
+    }
+    .payment__block {
+        margin-bottom: 230px;
+    }
+    .payment__block-subtitle {
+        margin-bottom: 17px;
+    }
+    .payment__block-addition{
+        height: 350px;
+    }
+    .footer__menu {
+        width: 300px;
+
+    }
+    .footer {
+        padding: 40px 10px;
+    }
+    .footer__menu {
+        margin-right: 0px;
+    }
+    .footer__logo{
+        display: none;
+    }
+    .footer .container{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .footer__menu-number span {
+        font-size: 10px;
+    }
+    .speak__title {
+        font-size: 25px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    .speak__subtitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 45px;
+    }
+    .speak__subtitle {
+        display: flex;
+        flex-direction: column;
+    }
+    .speak__subtitle-decr {
+        margin-top: 15px;
+        margin-right: 0;
+    }
+    .call input {
+        width: 95%;
+    }
+    .prefooter .container {
+        justify-content: center !important;
     }
    }
