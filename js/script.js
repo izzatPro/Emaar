@@ -1,73 +1,73 @@
 "use strict";
-// document.addEventListener('DOMContentLoaded', () =>{
-//     let radio = document.querySelectorAll('.tabheader__item');
-//     let parentTabs = document.querySelector('.parent__bigphoto');
-//     let mainTabs = document.querySelectorAll('.mainTabs');
+document.addEventListener('DOMContentLoaded', () =>{
+    let radio = document.querySelectorAll('.tabheader__item');
+    let parentTabs = document.querySelector('.parent__bigphoto');
+    let mainTabs = document.querySelectorAll('.mainTabs');
 
-//         function hideTabContent(){
-//             mainTabs.forEach(item =>{
-//                 item.classList.add('hide');
-//                 item.classList.remove('show','fade');
-//             });
-//             radio.forEach(item =>{
-//                 item.parentNode.classList.remove('flats__content_active');
-//             });
-//         }
-//         function showTabContent(i = 0){
-//             mainTabs[i].classList.add('show', 'fade');
-//             mainTabs[i].classList.remove('hide');
-//             radio[i].parentNode.classList.add('flats__content_active');
-//         }
-//         hideTabContent();
-//         showTabContent();
+        function hideTabContent(){
+            mainTabs.forEach(item =>{
+                item.classList.add('hide');
+                item.classList.remove('show','fade');
+            });
+            radio.forEach(item =>{
+                item.parentNode.classList.remove('flats__content_active');
+            });
+        }
+        function showTabContent(i = 0){
+            mainTabs[i].classList.add('show', 'fade');
+            mainTabs[i].classList.remove('hide');
+            radio[i].parentNode.classList.add('flats__content_active');
+        }
+        hideTabContent();
+        showTabContent();
 
-//         parentTabs.addEventListener('click', (e) =>{
-//             let target = e.target;
-//             if (target && target.classList.contains('tabheader__item')){
-//                 radio.forEach((item , i) =>{
-//                     if(item == target){
-//                         hideTabContent();
-//                         showTabContent(i);  
-//                     }
-//                 });
-//             }
-//         });
+        parentTabs.addEventListener('click', (e) =>{
+            let target = e.target;
+            if (target && target.classList.contains('tabheader__item')){
+                radio.forEach((item , i) =>{
+                    if(item == target){
+                        hideTabContent();
+                        showTabContent(i);  
+                    }
+                });
+            }
+        });
 
 
-//         let toggleSlider = document.querySelectorAll('.slider_choose');
-//         let parentToggle = document.querySelector('.parent__slider');
-//         let sliderBlock = document.querySelectorAll('.offer__slider');
-//        function hideSliderContent(){
-//             sliderBlock.forEach( item => {
-//                 item.classList.add('hide');
-//                 item.classList.remove('show','fade');
-//             });
-//             toggleSlider.forEach( item =>{
-//                 item.classList.remove('flats__content_active');
-//             });
-//         }
+        let toggleSlider = document.querySelectorAll('.slider_choose');
+        let parentToggle = document.querySelector('.parent__slider');
+        let sliderBlock = document.querySelectorAll('.offer__slider');
+       function hideSliderContent(){
+            sliderBlock.forEach( item => {
+                item.classList.add('hide');
+                item.classList.remove('show','fade');
+            });
+            toggleSlider.forEach( item =>{
+                item.classList.remove('flats__content_active');
+            });
+        }
    
 
-//         function showSliderContent( i = 0){
-//             sliderBlock[i].classList.add('show','fade');
-//             sliderBlock[i].classList.remove('hide');
-//             toggleSlider[i].classList.add('flats__content_active');
-//         }
+        function showSliderContent( i = 0){
+            sliderBlock[i].classList.add('show','fade');
+            sliderBlock[i].classList.remove('hide');
+            toggleSlider[i].classList.add('flats__content_active');
+        }
 
-//         hideSliderContent();
-//         showSliderContent();
+        hideSliderContent();
+        showSliderContent();
 
-//         parentToggle.addEventListener('click', (e) =>{
-//             if( e.target && e.target.classList.contains('slider_choose')){
-//                 toggleSlider.forEach((item, i) =>{
-//                     if (item == e.target){
-//                         console.log("asd");
-//                         hideSliderContent();
-//                         showSliderContent(i);
-//                     };
-//                 });
-//             }
-//         });
+        parentToggle.addEventListener('click', (e) =>{
+            if( e.target && e.target.classList.contains('slider_choose')){
+                toggleSlider.forEach((item, i) =>{
+                    if (item == e.target){
+                        console.log("asd");
+                        hideSliderContent();
+                        showSliderContent(i);
+                    };
+                });
+            }
+        });
 
 
       // Slider 1
@@ -332,4 +332,4 @@
 //         const callForm = document.querySelector('.call');
 //             callForm.addEventListener('submit', (e)=>{
 //             });
-// });
+});
