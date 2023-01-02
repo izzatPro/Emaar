@@ -52,8 +52,9 @@ ul {
   z-index: -5;
   opacity: 0;
   transition: 0.5s;
-
 }
+
+
 .modal__wrapper{
   position:fixed ;
   width: 100%;
@@ -202,9 +203,6 @@ ul {
   background: white;
 }
 /* Modal second */
-.modal__offer{
-  
-}
 .modal__wrapper-contact2{
    padding: 200px 80px 80px 80px;
    background: none;
