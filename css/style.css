@@ -1190,3 +1190,36 @@ footer .fab{
   background: #071C35;
   top: 232px;
 }
+.gallery{
+  padding: 100px 0;
+}
+.gallery img{
+  width: 100%;
+}
+.gallery__h3{
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #071C35;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.gallery__wrapper{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2,240px);
+  column-gap: 12px;
+  row-gap: 14px;
+
+}
+.gallery__img-3{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.gallery__img-2{
+  grid-column-start:2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
