@@ -1223,3 +1223,103 @@ footer .fab{
   grid-row-start: 1;
   grid-row-end: 2;
 }
+.current4, .total4{
+  font-family: 'Lato L';
+  font-size: 30px;
+}
+.floor__title-wrapper{
+  margin-bottom: 30px;
+}
+.floor__slider{
+  padding: 50px 70px 48px 100px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
+  position: relative;
+}
+.floor__slider-wrapper{
+
+  display: flex;
+  justify-content: space-between;
+}
+.floor__slider-title{
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #071C35;
+}
+.floor__slider-subtitle{
+  color: #777777;
+  font-size: 18px;
+  font-family: 'Lato L';
+  margin-bottom: 70px;
+}
+.rosewater{
+  max-width: 353px;
+}
+.floor__slider-img{
+  max-width: 540px;
+}
+.floor__slider-bedroom{
+  display: flex;
+  margin-bottom: 15px;
+}
+.floor__slider-bedroom:nth-child(3) .floor__line{
+  width: 161px;
+}
+.bed{
+  margin-right: 12px;
+}
+.floor__text{
+  font-size: 16px;
+  color: #071C35;
+  font-family: 'Lato L';
+  margin-right: 5px;
+}
+.floor__line{
+  width: 223px;
+  height: 17px;
+  border-bottom: 1px dashed rgba(7, 28, 53, 0.1);
+  margin-right: 8px;
+}
+.floor__slider-bedrooms{
+  margin-bottom: 30px;
+}
+.floor__book{
+  font-size: 20px;
+  font-family: 'Lato R';
+  color: #003D5F;
+  margin-bottom: 110px;
+}
+.floor__book span{
+  font-size: 25px;
+  font-family: 'Lato M';
+  margin-left: 8px;
+}
+.floor__button button{
+  background: #071C35;
+  width: 360px;
+  height: 47px;
+  color: #fff;
+  font-family: 'Lato R';
+  font-size: 17px;
+  text-transform: uppercase;
+  border:none;
+}
+.floor__slider-prev{
+  position: absolute;
+  top: 48%;
+  transform: translateX(-50%);
+  left: -52px;
+}
+.floor__slider-next{
+  top: 48%;
+  transform: translateX(-50%);
+  right: -102px;
+}
+.floor__right{
+  transform:rotate(-180deg);
+}
+.floor__slider-next{
+  position: absolute;
+}

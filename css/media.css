@@ -2,6 +2,14 @@
     .map{
         padding-left:0 ;
     }
+    .floor__slider-prev{
+        left: 40px;
+      }
+      .floor__slider-next{
+        top: 48%;
+        transform: translateX(-50%);
+        right: -9px;
+      }
  }
 @media (max-width: 1450.98px) { 
     .sale__right_title {
@@ -325,6 +333,18 @@
         column-gap: 7px;
         row-gap: 14px;
     }
+    .floor__slider-imgs img{
+        width: 95%;
+    }
+    .floor__slider-imgs img {
+        width: 100%;
+    }
+    .floor__slider-img {
+        width: 324px;
+    }
+    .floor__slider-wrapper {
+        align-items: center;
+    }
  }
  @media (max-width: 991.98px) { 
     .header{
@@ -488,6 +508,12 @@
     .gallery__wrapper {
         grid-template-rows: repeat(2,123px);
         column-gap: 5px;
+    }
+    .floor__slider-wrapper {
+        flex-direction: column;
+    }
+    .floor__button button {
+    margin-bottom: 60px;
     }
  }
  @media (max-width: 767.98px) { 
@@ -665,6 +691,36 @@
     flex-direction: column ;
   }
 
+  .gallery__h3 {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #071C35;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.current4, .total4 {
+    font-size: 23px;
+}
+.floor__slider-subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.floor__slider-title {
+    font-size: 25px;
+}
+.floor__slider {
+    padding: 30px 25px 12px 30px;
+}
+.floor__book {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+.floor__book span {
+    margin-left: 5px;
+}
+.floor__slider-prev {
+    left: 54px;
+}
 
  }
 
@@ -952,7 +1008,7 @@
         padding-top: 450px;
     }
     .map__view-title, .map__view-title2 {
-        font-size: 13px;
+        font-size: 12px;
     }
     .map__view-subtitle, .map__view-subtitle2 {
         font-size: 16px;
@@ -979,6 +1035,27 @@
     }
     .first_block::after {
         height: 71px !important;
+    }
+    .floor__slider-img {
+        width: 280px;
+    }
+    .floor__line{
+        width: 134px !important;
+    }
+    .floor__slider-bedroom:nth-child(3) .floor__line {
+        width: 70px !important;
+    }
+    .floor__button button {
+        width: 259px;
+    }
+    .floor__slider-prev {
+        left: 66px;
+        top: -28px;
+    }
+    .floor__slider-next {
+        top: -29px;
+        transform: translateX(-50%);
+        right: 15px;
     }
     /* .modal__wrapper-block {
         width: 300px;
