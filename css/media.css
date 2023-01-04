@@ -196,7 +196,7 @@
       }
       .flats__offer_wrapper {
         padding: 15px 10px 25px 10px;
-        width: 95%;
+        width: 100%;
         margin-right: 0 !important;
     }
     .flats__offer_img1,.flats__offer_img2,.flats__offer_img3{
@@ -344,6 +344,14 @@
     }
     .floor__slider-wrapper {
         align-items: center;
+    }
+    .fa-long-arrow-right {
+        left: 264px;
+        bottom: 404px;
+    }
+    .fa-long-arrow-left {
+        left: 137px;
+        bottom: 403px;
     }
  }
  @media (max-width: 991.98px) { 
@@ -531,6 +539,14 @@
     }
     .project__prefooter {
         padding-bottom: 100px !important;
+    }
+    
+    .fa-long-arrow-left {
+    left: 121px;
+    bottom: 389px;
+    }
+    .fa-long-arrow-right {
+        bottom: 389px;
     }
  }
  @media (max-width: 767.98px) { 
@@ -768,6 +784,22 @@
     }
     .project__prefooter {
         padding-bottom: 80px !important;
+    }
+    .fa-long-arrow-left {
+        left: 139px;
+        bottom: 398px !important;
+    }
+    .prev3 img, .next3 img {
+        bottom: 399px;
+    }
+
+    .fa-long-arrow-left {
+        left: 157px;
+        bottom: 398px !important;
+    }
+    .fa-long-arrow-right {
+        left: 231px;
+        bottom: 398px;
     }
 
  }
@@ -1125,5 +1157,15 @@
     }
     .project__prefooter {
         padding-bottom: 50px !important;
+    }
+    .payment__block {
+        margin-bottom: 180px;
+    }
+    .fa-long-arrow-left {
+        left: 33px;
+    }
+    .fa-long-arrow-right {
+        left: 97px;
+        bottom: 326px;
     }
    }

@@ -240,9 +240,9 @@ document.addEventListener('DOMContentLoaded', () =>{
            });
 
     //modal
-    // const  modalTrigger = document.querySelectorAll("[data-modal]"),
-    //        modal = document.querySelector('.modal__brochure'),
-    //        modalCloseBtn = document.querySelector('[data-close]');
+    const  modalTrigger = document.querySelectorAll("[data-modal]"),
+           modal = document.querySelector('.modal__brochure'),
+           modalCloseBtn = document.querySelector('[data-close]');
            
            
     
