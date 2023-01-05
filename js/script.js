@@ -320,7 +320,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 
         function showModalByScroll(){
           //Долистал до конца
-          if ( window.pageYOffset + document.documentElement.clientHeight + 5 >= document.documentElement.scrollHeight){
+          if ( window.pageYOffset + document.documentElement.clientHeight + 15 >= document.documentElement.scrollHeight){
             openModal2();
             window.removeEventListener('scroll' , showModalByScroll);
           }

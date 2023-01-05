@@ -11,6 +11,11 @@
         right: -9px;
       }
  }
+@media (max-width: 1500.98px) { 
+    .line,.line2{
+        display: none;
+    }
+ }
 @media (max-width: 1450.98px) { 
     .sale__right_title {
         font-size: 40px;
